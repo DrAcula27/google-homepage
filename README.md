@@ -1,3 +1,5 @@
-This project is a simple deconstruction and rebuild of Google's homepage.
+The Odin Project - Foundations
 
-Skills used: HTML, CSS
+Project: Google Homepage (HTML, CSS)
+
+A deconstruction and rebuild of the Google Search homepage.

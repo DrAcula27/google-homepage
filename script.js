@@ -1,4 +1,4 @@
-function myMenu() {
+function googleApps() {
     var x = document.getElementById("popup");
     if (x.style.display === "none") {
         x.style.display = "flex";

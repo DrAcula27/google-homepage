@@ -14,8 +14,8 @@
 body{
     height: 100vh;
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: small;
+    font-family: Ubuntu, Helvetica, sans-serif;
+    font-size: medium;
 }
 header{
     top: 0;
@@ -46,7 +46,7 @@ nav div:nth-child(2){
     right: 0;
 }
 nav div a{
-    padding: 5px;
+    padding: 15px;
     white-space: nowrap;
     text-decoration: none;
     color: #3b3b3b;
@@ -56,16 +56,12 @@ a:hover{
 }
 #login{
     background: url("img/profile.jpg");
-    height: 30px;
-    width: 30px;
+    height: 10px;
+    width: 10px;
     background-size: cover;
     border-radius: 50%;
     background-position: -1px;
     cursor: pointer;
-}
-#login div{
-    padding: 5px;
-    line-height: 10px;
 }
 .popup{
     position: absolute;
@@ -124,11 +120,15 @@ main{
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-top: 220px;
+    padding-top: 300px;
 }
 main img{
     display: block;
     margin: 0 auto;
+}
+.row{
+    display: flex;
+    flex-direction: row;
 }
 .menu{
     background-position: -131px -37px;
@@ -148,17 +148,18 @@ main img{
     margin: 30px 30px;
 }
 .switch{
-    position: fixed;
-    bottom: 70px;
-    right: 15px;
     height: 25px;
     width: 25px;
-    background-position: -212px -40px;
     cursor: pointer;
 }
 .switch:hover{
     background-color: #eee;
     border-radius: 50%;
+}
+.dark-icon{
+    background-image: url("img/darkmode.svg");
+    background-color: transparent;
+    background-repeat: no-repeat;
 }
 .dark-mode{
     background-color: #35363A;
@@ -207,13 +208,13 @@ main img{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    padding: 10px;
+    padding: 20px;
 }
 .buttons div{
     margin: 5px;
     padding: 10px;
     color: #3b3b3b;
-    background-color: #eee;
+    background-color: #f1f1f1;
     border-color: #c0c0c0;
     cursor: pointer;
     border: 1px solid #fff;
@@ -225,10 +226,13 @@ main img{
 .buttons a:hover{
     text-decoration: none;
 }
-footer{
-    background-color: #eeeeee;
-    padding: 5px;
-    position: fixed;
+footer {
     bottom: 0;
     width: 100%;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 1;
+    background-color: #f1f1f1;
+    padding: 10px;
 }

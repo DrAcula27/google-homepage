@@ -3,52 +3,76 @@
     <!--General Webpage Information-->
     <head>
         <meta charset="UTF-8">
+        <!--Make page responsive-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Title that shows up in tab-->
         <title>Google</title>
+        <!--Adds icon in front of title-->
         <link rel="shortcut icon" type="image/jpeg" href="../img/shortcut.jpeg">
+        <!--Fonts-->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
         <!--Link to custom CSS-->
         <link href="../style.css" rel="stylesheet">
     </head>
     <body>
+        <!--Header-->
         <header>
+            <!--Nav Bar-->
             <nav>
+                <!--Links on top left of page-->
                 <div>
                     <a href="#">About</a>
                     <a href="#">Store</a>
                 </div>
+                <!--Links on top right of page-->
                 <div>
                     <a href="#">Gmail</a>
                     <a href="#">Images</a>
-                    <a href="#">GoogleApps</a>
-                    <a href="#">Profile</a>
+                    <a href="#"><div onclick="myMenu()" class="menu gsprite"></div></a>
+                    <a href="#" id="login"><div></div></a>
                 </div>
             </nav>
+            <div id="popup" style="display: none;">
+                <!--popup menu items here-->
+            </div>
         </header>
+        <!--Main body-->
         <main>
+            <!--Google Logo-->
             <div>
                 <img src="../img/google.svg" alt="Google">
             </div>
+            <!--Darkmode Selector-->
             <div>
                 <img src="../img/darkmode.svg" alt="Darkmode">
             </div>
             <div>
-                <!--google search bar-->
-            </div>
-            <div>
-                <!--Google Search & I'm Feeling Lucky Buttons-->
+                <!--Google Search bar-->
+                <form>
+                    <div class="search_icon gsprite"></div>
+                    <input type="text" name="search" id="search">
+                    <!--Google Search & I'm Feeling Lucky Buttons-->
+                    <div class="buttons">
+                        <a><div id="gsearch">Google Search</div></a>
+                        <a><div id="lucky">I'm Feeling Lucky</div></a>
+                    </div>
+                </form>
             </div>
         </main>
+        <!--Footer-->
         <footer>
+            <!--Links on bottom left of page-->
             <div>
                 <a href="#">Advertising</a>
                 <a href="#">Business</a>
                 <a href="#">How Search Works</a>
             </div>
+            <!--Link on bottom center of page-->
             <div>
                 <a href="#">Carbon neutral since 2007</a>
             </div>
+            <!--Links on bottom right of page-->
             <div>
                 <a href="#">Privacy</a>
                 <a href="#">Terms</a>

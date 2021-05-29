@@ -13,87 +13,62 @@
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap" rel="stylesheet">
         <!--Link to custom CSS-->
-        <link href="../style.css" rel="stylesheet">
+        <link href="../style.css" rel="stylesheet" type="text/css">
     </head>
     <body>
         <!--Header-->
         <header>
-            <!--Nav Bar-->
-            <nav>
-                <!--Links on top left of page-->
-                <div>
-                    <a href="#">About</a>
-                    <a href="#">Store</a>
-                </div>
-                <!--Links on top right of page-->
-                <div>
-                    <a href="#">Gmail</a>
-                    <a href="#">Images</a>
-                    <a href="#"><div onclick="googleApps()" class="menu gsprite"></div></a>
-                    <a href="#" id="login"></a>
-                </div>
-            </nav>
-            <!--Popup Menu for "googleApps"-->
-            <div id="popup" class="popup" style="display: none;">
-                <a href="#">
-                    <div class="first sprite"></div>
-                    <div class="icon_text">Tribute</div>
-                </a>
-                <a href="#">
-                    <div class="second sprite"></div>
-                    <div class="icon_text">Form</div>
-                </a>
-                <a href="#">
-                    <div class="third sprite"></div>
-                    <div class="icon_text">Landing</div>
-                </a>
-                <a href="#">
-                    <div class="fourth sprite"></div>
-                    <div class="icon_text">Documentation</div>
-                </a>
-                <a href="#">
-                    <div class="fifth sprite"></div>
-                    <div class="icon_text">Portfolio</div>
-                </a>
+            <!--Links on top left of page-->
+            <div class="header-left">
+                <a href="#">About</a>
+                <a href="#">Store</a>
+            </div>
+            <!--Links on top right of page-->
+            <div class="header-right">
+                <a href="#">Gmail</a>
+                <a href="#">Images</a>
+                <a href="#">Apps</a>
+                <button>Sign In</button>
             </div>
         </header>
         <!--Main body-->
         <main>
             <!--Google Logo-->
-            <div class="row">
+            <div class="google-logo">
                 <img src="../img/google.svg" alt="Google">
                 <!--Darkmode Selector-->
-                <div onclick="darkMode()" class="switch dark-icon"></div>
+                <div onclick="darkMode()" class="switch darkmode"></div>
             </div>
+            <!--Google Search bar & buttons-->
             <div>
-                <!--Google Search bar-->
                 <form>
-                    <div class="search_icon gsprite"></div>
+                    <div class="search-icon gsprite"></div>
                     <input type="text" name="search" id="search">
-                    <!--Google Search & I'm Feeling Lucky Buttons-->
                     <div class="buttons">
                         <a><div id="gsearch">Google Search</div></a>
                         <a><div id="lucky">I'm Feeling Lucky</div></a>
                     </div>
                 </form>
             </div>
+            <!--COVID link-->
+            <div class="COVID-link">
+                <a href="#">Join us in the fight against COVID-19 around the world</a>
+            </div>
         </main>
         <!--Footer-->
         <footer>
-            <nav>
-                <!--Links on bottom left of page-->
-                <div class="left">
-                    <a href="#">Advertising</a>
-                    <a href="#">Business</a>
-                    <a href="#">How Search Works</a>
-                </div>
-                <!--Links on bottom right of page-->
-                <div class="right">
-                    <a href="#">Privacy</a>
-                    <a href="#">Terms</a>
-                    <a href="#">Settings</a>
-                </div>
-            </nav>
+            <!--Links on bottom left of page-->
+            <div class="footer-left">
+                <a href="#">Advertising</a>
+                <a href="#">Business</a>
+                <a href="#">How Search Works</a>
+            </div>
+            <!--Links on bottom right of page-->
+            <div class="footer-right">
+                <a href="#">Privacy</a>
+                <a href="#">Terms</a>
+                <a href="#">Settings</a>
+            </div>
         </footer>
     <!--Link to custom JS-->
     <script type="text/javascript" src="../script.js"></script>
